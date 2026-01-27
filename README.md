@@ -1,105 +1,133 @@
-# Staffing Website Template
+# DC Technologies USA
 
-A modern, responsive staffing and workforce solutions website template built with React and Tailwind CSS.
+> Professional IT Staffing & Technology Recruitment Services
 
-## Features
+[![Live Website](https://img.shields.io/badge/Live-dctechnologiesusa.com-orange)](https://dctechnologiesusa.com)
+[![React](https://img.shields.io/badge/React-18.2-blue)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.0-purple)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-cyan)](https://tailwindcss.com/)
 
-- 🎨 Modern, clean design inspired by professional staffing websites
-- 📱 Fully responsive (mobile-first approach)
-- ⚡ Built with Vite for fast development
-- 🎭 Tailwind CSS for utility-first styling
-- 🧩 Modular component architecture
-- ♿ Accessible and semantic HTML
-- 🎯 Placeholder content ready for customization
+## 🚀 Live Website
 
-## Project Structure
+**[https://dctechnologiesusa.com](https://dctechnologiesusa.com)**
+
+## ✨ Features
+
+- ⚡ Lightning fast performance with Vite
+- 📱 Fully responsive mobile-first design
+- 🔍 Complete SEO optimization
+- ♿ WCAG 2.1 accessibility compliant
+- 🎨 Modern UI/UX with smooth animations
+- 🚀 Production-ready with Nginx & SSL
+
+## 🛠️ Tech Stack
+
+- **React** 18.2.0 - UI Framework
+- **Vite** 5.0.8 - Build Tool
+- **Tailwind CSS** 3.4.0 - Styling
+- **React Router** 7.12.0 - Routing
+- **React Icons** 4.12.0 - Icons
+
+## 📁 Project Structure
 
 ```
-src/
-├── components/
-│   ├── layout/
-│   │   ├── Header.jsx          # Navigation header
-│   │   └── Footer.jsx          # Footer with links
-│   ├── sections/
-│   │   ├── Hero.jsx            # Hero section
-│   │   ├── Services.jsx        # Services overview
-│   │   ├── WhyChooseUs.jsx     # Benefits/advantages
-│   │   ├── Stats.jsx           # Metrics/statistics
-│   │   ├── Projects.jsx        # Case studies/projects
-│   │   ├── Testimonials.jsx    # Client testimonials
-│   │   └── Blog.jsx            # Latest articles
-│   └── ui/
-│       ├── Button.jsx          # Reusable button
-│       └── Card.jsx            # Reusable card
-├── data/
-│   └── content.js              # Placeholder content
-├── App.jsx                     # Main app component
-├── main.jsx                    # Entry point
-└── index.css                   # Global styles
+dctechnologies/
+├── src/
+│   ├── components/        # React components
+│   │   ├── About/
+│   │   ├── BlogPreview/
+│   │   ├── Footer/
+│   │   ├── Header/
+│   │   ├── Hero/
+│   │   ├── Projects/
+│   │   ├── Services/
+│   │   ├── Stats/
+│   │   ├── Testimonials/
+│   │   ├── WhyChooseUs/
+│   │   ├── ui/           # Reusable UI components
+│   │   ├── LazyImage.jsx
+│   │   └── SEOHead.jsx
+│   ├── pages/            # Page components
+│   │   ├── Home.jsx
+│   │   ├── Services.jsx
+│   │   ├── WhoWeAre.jsx
+│   │   ├── OurTeam.jsx
+│   │   └── ContactUs.jsx
+│   ├── utils/            # Utilities
+│   │   ├── constants.js
+│   │   ├── seo.js
+│   │   └── performance.js
+│   ├── assets/           # Static assets
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── public/               # Public assets
+│   ├── images/          # Hero images
+│   ├── favicon.*        # Favicons
+│   ├── robots.txt
+│   ├── sitemap.xml
+│   └── site.webmanifest
+├── docs/                # Documentation
+├── nginx/               # Nginx config
+└── scripts/             # Build scripts
 ```
 
-## Getting Started
-
-### Installation
+## 🏁 Getting Started
 
 ```bash
+# Clone repository
+git clone https://github.com/Abhi1727/DCTechnologiesUSA.git
+cd DCTechnologiesUSA
+
+# Install dependencies
 npm install
-```
 
-### Development
-
-```bash
+# Start development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### Build for Production
+## 📜 Available Scripts
 
 ```bash
+npm run dev      # Start dev server
+npm run build    # Build for production
+npm run preview  # Preview production build
+npm run lint     # Run ESLint
+npm run format   # Format code with Prettier
+```
+
+## 🚀 Deployment
+
+```bash
+# Build production bundle
 npm run build
+
+# Deploy to server
+sudo cp -r dist/* /var/www/dctechnologiesusa.com/
+sudo systemctl restart nginx
 ```
 
-### Preview Production Build
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
 
-```bash
-npm preview
-```
+## 📚 Documentation
 
-## Customization
+- [SEO Implementation Guide](docs/SEO-IMPLEMENTATION-GUIDE.md)
+- [Mobile Optimization Summary](docs/MOBILE-OPTIMIZATION-SUMMARY.md)
+- [Deployment Checklist](docs/DEPLOYMENT-CHECKLIST.md)
+- [QA Test Report](QA-TEST-REPORT.md)
 
-All placeholder content is centralized in `src/data/content.js`. Update this file to customize:
+## 📊 Performance
 
-- Company name and contact information
-- Service offerings
-- Team members
-- Testimonials
-- Statistics
-- Blog posts
+- Load Time: < 1s
+- Bundle Size: 82 KB (gzipped)
+- Lighthouse Score: 90+
+- SEO Score: 98/100
 
-## Code Quality
+## 📝 License
 
-### Linting
+© 2026 DC Technologies USA. All rights reserved.
 
-```bash
-npm run lint
-```
+## 📞 Contact
 
-### Formatting
-
-```bash
-npm run format
-```
-
-## Technologies
-
-- **React 18** - UI library
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Utility-first CSS framework
-- **React Icons** - Icon library
-- **ESLint** - Code linting
-- **Prettier** - Code formatting
-
-## License
-
-This is a template project - use it freely for your projects.
+**Website:** [dctechnologiesusa.com](https://dctechnologiesusa.com)  
+**Email:** info@dctechnologiesusa.com
