@@ -1,0 +1,20 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Block access to admin and private areas (if any in future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+# Allow search engines to crawl important directories
+Allow: /services/
+Allow: /who-we-are/
+Allow: /our-team/
+Allow: /contact-us/
+
+# Crawl-delay (optional, helps prevent server overload)
+# Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://dctechnologiesusa.com/sitemap.xml
