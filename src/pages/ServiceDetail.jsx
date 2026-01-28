@@ -312,7 +312,7 @@ export default function ServiceDetail() {
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <img 
-                    src="/images/hero-main.jpg" 
+                    src="/images/Quality Talent Pool.jpg" 
                     alt={service.title}
                     className="w-full h-full object-cover"
                   />

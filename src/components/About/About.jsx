@@ -35,8 +35,8 @@ export default function About() {
             {/* Main Large Image */}
             <div className="rounded-3xl overflow-hidden shadow-2xl mb-4">
               <img 
-                src="/images/hero-main.jpg" 
-                alt="DC Technologies USA Team"
+                src="/images/Industry Expertise.jpg" 
+                alt="DC Technologies USA - Industry Expertise"
                 className="aspect-[4/3] w-full object-cover"
                 loading="lazy"
               />

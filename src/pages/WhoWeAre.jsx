@@ -35,8 +35,8 @@ export default function WhoWeAre() {
             {/* Image */}
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img 
-                src="/images/hero-main.jpg" 
-                alt="DC Technologies USA - IT Consulting and Staffing Services"
+                src="/images/Proven Process.jpg" 
+                alt="DC Technologies USA - Proven Process"
                 className="aspect-[4/3] w-full object-cover"
                 loading="eager"
               />
