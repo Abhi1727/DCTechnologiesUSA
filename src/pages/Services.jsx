@@ -1,4 +1,5 @@
-import { FaUserTie, FaBriefcase, FaChartLine, FaHandshake, FaClipboardCheck, FaUsers, FaCode, FaDatabase, FaCloud, FaShieldAlt, FaMobile, FaCog } from 'react-icons/fa'
+import { FaUserTie, FaBriefcase, FaChartLine, FaHandshake, FaClipboardCheck, FaUsers, FaCode, FaDatabase, FaCloud, FaShieldAlt, FaMobile, FaCog, FaArrowRight } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import SEOHead from '../components/SEOHead.jsx'
 import { pageSEO, serviceSchema, breadcrumbSchemas } from '../utils/seo'
 
@@ -10,6 +11,7 @@ const iconMap = {
 const services = [
   {
     id: 1,
+    slug: 'it-consulting',
     icon: 'FaUserTie',
     title: 'IT Consulting',
     description: 'It takes more than skills to find an ideal hire. With our personal approach, expert insights, and talent database, we help you take your IT team to the next level.',
@@ -17,6 +19,7 @@ const services = [
   },
   {
     id: 2,
+    slug: 'it-training',
     icon: 'FaChartLine',
     title: 'IT Training',
     description: 'We provide IT training to freshers, job seekers, new recruits, and experienced professionals to enhance their knowledge, efficiency, and productivity.',
@@ -24,6 +27,7 @@ const services = [
   },
   {
     id: 3,
+    slug: 'contract-staffing',
     icon: 'FaBriefcase',
     title: 'Contract Staffing',
     description: 'Flexible staffing solutions that scale with your business needs, providing skilled professionals for short-term and long-term projects.',
@@ -31,6 +35,7 @@ const services = [
   },
   {
     id: 4,
+    slug: 'permanent-placement',
     icon: 'FaHandshake',
     title: 'Permanent Placement',
     description: 'Find the perfect full-time employees who align with your company culture and contribute to long-term success.',
@@ -38,6 +43,7 @@ const services = [
   },
   {
     id: 5,
+    slug: 'workforce-optimization',
     icon: 'FaClipboardCheck',
     title: 'Workforce Optimization',
     description: 'Strategic workforce planning and optimization services to maximize productivity and reduce operational costs.',
@@ -45,6 +51,7 @@ const services = [
   },
   {
     id: 6,
+    slug: 'team-building',
     icon: 'FaUsers',
     title: 'Team Building',
     description: 'Build high-performing teams with our expert guidance on team composition, dynamics, and development strategies.',
@@ -105,13 +112,19 @@ export default function Services() {
             {services.map((service) => {
               const IconComponent = iconMap[service.icon]
               return (
-                <div key={service.id} className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition-shadow duration-300">
-                  <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
-                    <IconComponent className="text-3xl text-primary-500" />
+                <Link 
+                  key={service.id} 
+                  to={`/services/${service.slug}`}
+                  className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl hover:border-primary-300 transition-all duration-300 group"
+                >
+                  <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-500 transition-colors">
+                    <IconComponent className="text-3xl text-primary-500 group-hover:text-white transition-colors" />
                   </div>
-                  <h3 className="text-2xl font-bold text-secondary-700 mb-4">{service.title}</h3>
+                  <h3 className="text-2xl font-bold text-secondary-700 mb-4 group-hover:text-primary-500 transition-colors">
+                    {service.title}
+                  </h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 mb-6">
                     {service.features.map((feature, index) => (
                       <li key={index} className="flex items-center gap-2 text-gray-700">
                         <div className="w-1.5 h-1.5 bg-primary-500 rounded-full"></div>
@@ -119,7 +132,11 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                  <div className="text-primary-500 font-semibold inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                    Learn More
+                    <FaArrowRight className="text-sm" />
+                  </div>
+                </Link>
               )
             })}
           </div>
