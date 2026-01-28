@@ -10,7 +10,6 @@ Disallow: /*.json$
 # Allow search engines to crawl important directories
 Allow: /services/
 Allow: /who-we-are/
-Allow: /our-team/
 Allow: /contact-us/
 
 # Crawl-delay (optional, helps prevent server overload)
