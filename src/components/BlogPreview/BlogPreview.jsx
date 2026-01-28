@@ -66,13 +66,10 @@ export default function BlogPreview() {
                   {article.excerpt}
                 </p>
 
-                <a 
-                  href="#" 
-                  className="text-primary-600 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all"
-                >
+                <div className="text-primary-600 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
                   Read More
                   <FaArrowRight className="text-sm" />
-                </a>
+                </div>
 
                 {/* Date */}
                 <div className="mt-4 pt-4 border-t border-gray-100">

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { FaArrowRight, FaUsers } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import { siteData } from '../../utils/constants'
 
 function Counter({ end, duration = 2000, suffix = '' }) {
@@ -82,10 +83,10 @@ export default function Stats() {
             <p className="text-gray-600 leading-relaxed mb-8 text-lg">
               {siteData.stats.subtitle}
             </p>
-            <button className="px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors inline-flex items-center gap-3 group">
+            <Link to="/contact-us" className="px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors inline-flex items-center gap-3 group">
               Get Started
               <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            </Link>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaArrowRight } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import { siteData } from '../../utils/constants'
 
 const iconMap = {
@@ -77,13 +78,13 @@ export default function Footer() {
             <ul className="space-y-2 sm:space-y-3">
               {siteData.footer.quickLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-sm sm:text-base text-gray-400 hover:text-primary-400 transition-colors inline-flex items-center gap-2"
                   >
                     <FaArrowRight className="text-xs flex-shrink-0" />
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -95,13 +96,13 @@ export default function Footer() {
             <ul className="space-y-2 sm:space-y-3">
               {siteData.footer.services.map((service) => (
                 <li key={service.name}>
-                  <a
-                    href={service.href}
+                  <Link
+                    to={service.href}
                     className="text-sm sm:text-base text-gray-400 hover:text-primary-400 transition-colors inline-flex items-center gap-2"
                   >
                     <FaArrowRight className="text-xs flex-shrink-0" />
                     {service.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

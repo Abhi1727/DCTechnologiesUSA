@@ -1,4 +1,5 @@
 import { FaArrowRight } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import { siteData } from '../../utils/constants'
 
 export default function About() {
@@ -99,10 +100,10 @@ export default function About() {
             <p className="text-gray-400 leading-relaxed mb-8">
               Partner with us to experience seamless hiring and unmatched results.
             </p>
-            <button className="px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors inline-flex items-center gap-3 group">
+            <Link to="/who-we-are" className="px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors inline-flex items-center gap-3 group">
               {siteData.about.cta}
               <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

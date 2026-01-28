@@ -1,4 +1,5 @@
 import { FaArrowRight } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import { siteData } from '../../utils/constants'
 
 export default function Hero() {
@@ -23,13 +24,13 @@ export default function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 md:pt-4">
-              <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors inline-flex items-center justify-center gap-2 sm:gap-3 group text-sm sm:text-base">
+              <Link to="/contact-us" className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors inline-flex items-center justify-center gap-2 sm:gap-3 group text-sm sm:text-base">
                 {siteData.hero.cta.primary}
                 <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-transparent text-secondary-700 border-2 border-secondary-700 rounded-full font-semibold hover:bg-secondary-50 transition-colors inline-flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base">
+              </Link>
+              <Link to="/services" className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-transparent text-secondary-700 border-2 border-secondary-700 rounded-full font-semibold hover:bg-secondary-50 transition-colors inline-flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base">
                 {siteData.hero.cta.secondary}
-              </button>
+              </Link>
             </div>
           </div>
 

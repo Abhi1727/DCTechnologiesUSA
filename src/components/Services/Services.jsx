@@ -1,4 +1,5 @@
 import { FaUserTie, FaBriefcase, FaChartLine, FaHandshake, FaClipboardCheck, FaUsers, FaArrowRight, FaCheck } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import { siteData } from '../../utils/constants'
 
 const iconMap = {
@@ -54,10 +55,10 @@ export default function Services() {
                 <p className="text-gray-600 leading-relaxed mb-4">
                   {service.description}
                 </p>
-                <a href="#" className="text-primary-500 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
+                <Link to="/services" className="text-primary-500 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
                   Learn More
                   <FaArrowRight className="text-sm" />
-                </a>
+                </Link>
               </div>
             )
           })}
@@ -65,10 +66,10 @@ export default function Services() {
 
         {/* CTA */}
         <div className="text-center">
-          <button className="px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors inline-flex items-center gap-3 group">
+          <Link to="/services" className="px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors inline-flex items-center gap-3 group">
             View All Services
             <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-          </button>
+          </Link>
         </div>
       </div>
     </section>
