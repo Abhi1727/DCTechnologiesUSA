@@ -54,13 +54,6 @@ export const pageSEO = {
     ogType: 'website',
     canonical: 'https://dctechnologiesusa.com/services',
   },
-  ourTeam: {
-    title: 'Our Expert Team | IT Recruitment Specialists | DC Technologies USA',
-    description: 'Meet our team of experienced IT recruitment specialists and technology staffing experts. Dedicated professionals with deep technical knowledge and industry expertise.',
-    keywords: 'IT recruiters, technology staffing experts, recruitment team, IT consulting professionals',
-    ogType: 'website',
-    canonical: 'https://dctechnologiesusa.com/our-team',
-  },
   contactUs: {
     title: 'Contact DC Technologies USA | IT Staffing & Recruitment Services',
     description: 'Get in touch with DC Technologies USA for your IT staffing and technology recruitment needs. Call +1 (555) 123-4567 or email info@dctechnologiesusa.com for expert staffing solutions.',

@@ -31,17 +31,9 @@
   <!-- Contact Us Page - Important for conversions -->
   <url>
     <loc>https://dctechnologiesusa.com/contact-us</loc>
-    <lastmod>2026-01-22</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-
-  <!-- Our Team Page -->
-  <url>
-    <loc>https://dctechnologiesusa.com/our-team</loc>
-    <lastmod>2026-01-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 
 </urlset>
