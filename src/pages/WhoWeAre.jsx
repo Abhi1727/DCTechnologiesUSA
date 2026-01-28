@@ -34,11 +34,12 @@ export default function WhoWeAre() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             {/* Image */}
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <div className="aspect-[4/3] bg-gradient-to-br from-primary-100 to-secondary-100 flex items-center justify-center">
-                <svg className="w-32 h-32 text-primary-300" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                </svg>
-              </div>
+              <img 
+                src="/images/hero-main.jpg" 
+                alt="DC Technologies USA - IT Consulting and Staffing Services"
+                className="aspect-[4/3] w-full object-cover"
+                loading="eager"
+              />
             </div>
 
             {/* Content */}

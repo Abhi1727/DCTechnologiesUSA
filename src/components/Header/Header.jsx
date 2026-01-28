@@ -22,24 +22,6 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Bar */}
-      <div className="bg-secondary-700 text-white py-2 hidden md:block">
-        <div className="container-custom">
-          <div className="flex justify-between items-center text-sm">
-            <div className="flex gap-6">
-              <a href={`tel:${siteData.company.phone}`} className="flex items-center gap-2 hover:text-primary-500 transition-colors">
-                <FaPhone className="text-xs" />
-                {siteData.company.phone}
-              </a>
-              <a href={`mailto:${siteData.company.email}`} className="flex items-center gap-2 hover:text-primary-500 transition-colors">
-                <FaEnvelope className="text-xs" />
-                {siteData.company.email}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navigation */}
       <header 
         className={`sticky top-0 z-50 transition-all duration-300 ${

@@ -71,13 +71,13 @@ export const organizationSchema = {
   logo: 'https://dctechnologiesusa.com/logo.png',
   description: 'Leading IT staffing and technology recruitment company providing comprehensive workforce solutions including contract staffing, permanent placement, and IT consulting services.',
   email: 'info@dctechnologiesusa.com',
-  telephone: '+1-555-123-4567',
+  telephone: '+1-888-591-7999',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '123 Business Street',
-    addressLocality: 'City',
-    addressRegion: 'State',
-    postalCode: '12345',
+    streetAddress: '30N Gould St Ste R',
+    addressLocality: 'Sheridan',
+    addressRegion: 'WY',
+    postalCode: '82802',
     addressCountry: 'US',
   },
   sameAs: [
@@ -85,7 +85,7 @@ export const organizationSchema = {
   ],
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+1-555-123-4567',
+    telephone: '+1-888-591-7999',
     contactType: 'Customer Service',
     email: 'info@dctechnologiesusa.com',
     availableLanguage: ['English'],

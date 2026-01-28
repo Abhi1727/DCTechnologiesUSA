@@ -221,17 +221,6 @@ export default function ContactUs() {
           </div>
         </div>
       </section>
-
-      {/* Map Section (Placeholder) */}
-      <section className="bg-gray-100">
-        <div className="aspect-[21/9] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-          <div className="text-center text-gray-500">
-            <FaMapMarkerAlt className="text-6xl mb-4 mx-auto" />
-            <p className="text-xl font-semibold">Map Placeholder</p>
-            <p className="text-sm">Integrate Google Maps or similar service here</p>
-          </div>
-        </div>
-      </section>
     </div>
     </>
   )

@@ -3,9 +3,9 @@ export const siteData = {
     name: 'DC Technologies USA',
     tagline: 'Driving Success Through Talent',
     description: 'We provide outsourced staffing solutions',
-    phone: '+1 (555) 123-4567',
+    phone: '+1 (888) 591-7999',
     email: 'info@dctechnologiesusa.com',
-    address: '123 Business Street, City, State 12345',
+    address: '30N Gould St Ste R, Sheridan, WY 82802',
   },
 
   navigation: {
