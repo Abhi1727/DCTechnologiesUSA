@@ -81,10 +81,7 @@ export const organizationSchema = {
     addressCountry: 'US',
   },
   sameAs: [
-    'https://www.facebook.com/dctechnologiesusa',
-    'https://www.twitter.com/dctechnologiesusa',
-    'https://www.linkedin.com/company/dctechnologiesusa',
-    'https://www.instagram.com/dctechnologiesusa',
+    'https://www.linkedin.com/company/dc-technologies-usa/',
   ],
   contactPoint: {
     '@type': 'ContactPoint',

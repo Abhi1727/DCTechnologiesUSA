@@ -1,12 +1,9 @@
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaArrowRight } from 'react-icons/fa'
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaArrowRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { siteData } from '../../utils/constants'
 
 const iconMap = {
-  FaFacebook,
-  FaTwitter,
   FaLinkedin,
-  FaInstagram,
 }
 
 export default function Footer() {
@@ -62,6 +59,8 @@ export default function Footer() {
                   <a
                     key={social.name}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors touch-manipulation"
                     aria-label={social.name}
                   >

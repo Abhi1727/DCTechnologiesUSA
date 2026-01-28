@@ -4,9 +4,7 @@ import Services from '../components/Services/Services.jsx'
 import About from '../components/About/About.jsx'
 import WhyChooseUs from '../components/WhyChooseUs/WhyChooseUs.jsx'
 import Stats from '../components/Stats/Stats.jsx'
-import Projects from '../components/Projects/Projects.jsx'
 import Testimonials from '../components/Testimonials/Testimonials.jsx'
-import BlogPreview from '../components/BlogPreview/BlogPreview.jsx'
 import { pageSEO, organizationSchema, websiteSchema, breadcrumbSchemas } from '../utils/seo'
 
 export default function Home() {
@@ -28,8 +26,6 @@ export default function Home() {
       <WhyChooseUs />
       <Stats />
       <Testimonials />
-      <Projects />
-      <BlogPreview />
     </>
   )
 }

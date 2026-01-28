@@ -312,10 +312,7 @@ export const siteData = {
       { name: 'Workforce Optimization', href: '#services' },
     ],
     socialLinks: [
-      { name: 'Facebook', icon: 'FaFacebook', href: '#' },
-      { name: 'Twitter', icon: 'FaTwitter', href: '#' },
-      { name: 'LinkedIn', icon: 'FaLinkedin', href: '#' },
-      { name: 'Instagram', icon: 'FaInstagram', href: '#' },
+      { name: 'LinkedIn', icon: 'FaLinkedin', href: 'https://www.linkedin.com/company/dc-technologies-usa/' },
     ],
   },
 }
