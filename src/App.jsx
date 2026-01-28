@@ -5,7 +5,6 @@ import Footer from './components/Footer/Footer.jsx'
 import Home from './pages/Home.jsx'
 import WhoWeAre from './pages/WhoWeAre.jsx'
 import Services from './pages/Services.jsx'
-import OurTeam from './pages/OurTeam.jsx'
 import ContactUs from './pages/ContactUs.jsx'
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/who-we-are" element={<WhoWeAre />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/our-team" element={<OurTeam />} />
             <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
         </main>

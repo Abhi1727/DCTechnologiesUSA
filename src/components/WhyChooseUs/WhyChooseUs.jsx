@@ -17,36 +17,42 @@ export default function WhyChooseUs() {
       icon: 'FaNetworkWired',
       title: 'Industry Expertise',
       description: 'Extensive knowledge across diverse sectors ensures tailored hiring solutions for your unique needs.',
+      image: '/images/Industry Expertise.jpg'
     },
     {
       id: 2,
       icon: 'FaLightbulb',
       title: 'Quality Talent Pool',
       description: 'Access a pre-vetted network of top-tier professionals ready to drive your success.',
+      image: '/images/Quality Talent Pool.jpg'
     },
     {
       id: 3,
       icon: 'FaHandsHelping',
       title: 'Customized Solutions',
       description: 'Our flexible services align perfectly with your business goals and project timelines.',
+      image: '/images/Customized Solutions.jpg'
     },
     {
       id: 4,
       icon: 'FaUsers',
       title: 'Dedicated Support',
       description: 'Personalized service and ongoing support throughout the entire hiring process.',
+      image: '/images/Dedicated Support.jpg'
     },
     {
       id: 5,
       icon: 'FaCog',
       title: 'Proven Process',
       description: 'Streamlined recruitment methodology that delivers results efficiently and effectively.',
+      image: '/images/Proven Process.jpg'
     },
     {
       id: 6,
       icon: 'FaGlobe',
       title: 'Global Reach',
       description: 'Extensive network spanning multiple regions to connect you with the best talent worldwide.',
+      image: '/images/Global Reach.jpg'
     },
   ]
 
@@ -83,12 +89,13 @@ export default function WhyChooseUs() {
               <div key={reason.id} className="group cursor-pointer">
                 {/* Image Card */}
                 <div className="relative overflow-hidden rounded-2xl mb-4 sm:mb-6 shadow-lg">
-                  {/* Placeholder Image */}
-                  <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                    <svg className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                    </svg>
-                  </div>
+                  {/* Actual Image */}
+                  <img 
+                    src={reason.image} 
+                    alt={reason.title}
+                    className="aspect-[4/3] w-full h-full object-cover"
+                    loading="lazy"
+                  />
                   
                   {/* Icon Circle Overlay */}
                   <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">

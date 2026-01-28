@@ -49,7 +49,12 @@ export default function Header() {
         <nav className="container-custom">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center gap-3">
+              <img 
+                src="/logo.png" 
+                alt="DC Technologies USA Logo" 
+                className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
+              />
               <div className="text-lg sm:text-xl md:text-2xl font-display font-bold text-secondary-700">
                 {siteData.company.name}
               </div>

@@ -13,7 +13,6 @@ export const siteData = {
       { name: 'Home', href: '/' },
       { name: 'Who We Are', href: '/who-we-are' },
       { name: 'Services', href: '/services' },
-      { name: 'Our Team', href: '/our-team' },
       { name: 'Contact Us', href: '/contact-us' },
     ],
   },
