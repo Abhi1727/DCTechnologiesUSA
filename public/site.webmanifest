@@ -4,13 +4,18 @@
   "description": "IT Staffing & Technology Recruitment Services",
   "icons": [
     {
-      "src": "/favicon-192.png",
+      "src": "/logo-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/favicon-512.png",
+      "src": "/logo-512.png",
       "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "500x500",
       "type": "image/png"
     }
   ],
