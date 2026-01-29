@@ -77,13 +77,13 @@ export default function WhyChooseUs() {
 
         {/* Reasons Grid - Icon Cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {reasons.map((reason) => {
+          {reasons.map((reason, index) => {
             const IconComponent = iconMap[reason.icon]
             return (
-              <div key={reason.id} className="card p-6 sm:p-8 group hover:shadow-xl transition-all duration-300">
+              <div key={reason.id} className="card p-6 sm:p-8 group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                 {/* Icon */}
                 <div className="mb-6">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
                     <IconComponent className="text-3xl sm:text-4xl text-white" />
                   </div>
                 </div>

@@ -33,11 +33,11 @@ export default function About() {
           {/* Images Container */}
           <div className="relative z-10 max-w-xl">
             {/* Main Large Image */}
-            <div className="rounded-3xl overflow-hidden shadow-2xl mb-4">
+            <div className="rounded-3xl overflow-hidden shadow-2xl mb-4 hover:shadow-primary-700/50 hover:scale-[1.02] transition-all duration-500 group">
               <img 
                 src="/images/hero-main.jpg" 
                 alt="DC Technologies USA - Professional Team Collaboration"
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-[4/3] w-full object-cover group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
             </div>
@@ -53,7 +53,7 @@ export default function About() {
             </div>
 
             {/* Experience Badge */}
-            <div className="absolute -top-4 right-8 w-32 h-32 bg-white rounded-full flex flex-col items-center justify-center shadow-xl">
+            <div className="absolute -top-4 right-8 w-32 h-32 bg-white rounded-full flex flex-col items-center justify-center shadow-xl hover:shadow-2xl hover:scale-110 transition-all duration-300 animate-pulse-glow">
               <div className="text-4xl font-bold text-primary-500">30+</div>
               <div className="text-xs text-gray-600 text-center leading-tight">
                 Years of<br />Experience

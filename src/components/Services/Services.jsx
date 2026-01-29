@@ -43,9 +43,9 @@ export default function Services() {
           {siteData.services.items.map((service) => {
             const IconComponent = iconMap[service.icon]
             return (
-              <div key={service.id} className="card p-5 sm:p-6 md:p-8 group cursor-pointer">
+              <div key={service.id} className="card p-5 sm:p-6 md:p-8 group cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
                 <div className="mb-6">
-                  <div className="w-16 h-16 bg-primary-50 rounded-lg flex items-center justify-center group-hover:bg-primary-500 transition-colors duration-300">
+                  <div className="w-16 h-16 bg-primary-50 rounded-lg flex items-center justify-center group-hover:bg-primary-500 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                     <IconComponent className="text-3xl text-primary-500 group-hover:text-white transition-colors duration-300" />
                   </div>
                 </div>
@@ -66,9 +66,9 @@ export default function Services() {
 
         {/* CTA */}
         <div className="text-center">
-          <Link to="/services" className="px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors inline-flex items-center gap-3 group">
+          <Link to="/services" className="px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 hover:shadow-lg hover:shadow-primary-500/50 hover:scale-105 transition-all duration-300 inline-flex items-center gap-3 group">
             View All Services
-            <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
+            <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
           </Link>
         </div>
       </div>

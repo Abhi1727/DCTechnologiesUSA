@@ -24,11 +24,11 @@ export default function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 md:pt-4">
-              <Link to="/contact-us" className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors inline-flex items-center justify-center gap-2 sm:gap-3 group text-sm sm:text-base">
+              <Link to="/contact-us" className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 hover:shadow-lg hover:shadow-primary-500/50 hover:scale-105 transition-all duration-300 inline-flex items-center justify-center gap-2 sm:gap-3 group text-sm sm:text-base">
                 {siteData.hero.cta.primary}
-                <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
+                <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
-              <Link to="/services" className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-transparent text-secondary-700 border-2 border-secondary-700 rounded-full font-semibold hover:bg-secondary-50 transition-colors inline-flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base">
+              <Link to="/services" className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-transparent text-secondary-700 border-2 border-secondary-700 rounded-full font-semibold hover:bg-secondary-700 hover:text-white hover:scale-105 transition-all duration-300 inline-flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base">
                 {siteData.hero.cta.secondary}
               </Link>
             </div>
@@ -36,11 +36,11 @@ export default function Hero() {
 
           {/* Right Content - Image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-primary-500/20 hover:scale-[1.02] transition-all duration-500 group">
               <img 
                 src="/images/Industry Expertise.jpg" 
                 alt="DC Technologies USA - Expert IT Staffing and Technology Recruitment"
-                className="w-full h-auto object-cover aspect-[4/3]"
+                className="w-full h-auto object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-700"
                 loading="eager"
                 width="1200"
                 height="900"

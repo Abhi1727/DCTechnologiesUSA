@@ -24,8 +24,8 @@ export default function Header() {
     <>
       {/* Main Navigation */}
       <header 
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white shadow-md' : 'bg-white'
+        className={`sticky top-0 z-50 transition-all duration-300 backdrop-blur-sm ${
+          isScrolled ? 'bg-white/95 shadow-lg' : 'bg-white'
         }`}
       >
         <nav className="container-custom">

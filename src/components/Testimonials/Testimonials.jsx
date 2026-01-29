@@ -37,25 +37,25 @@ export default function Testimonials() {
             <div className="absolute top-32 left-20 w-8 h-8 bg-primary-300 rounded-full opacity-60"></div>
 
             {/* Floating Profile Images */}
-            <div className="absolute top-1/4 left-1/4 w-24 h-24 rounded-full border-4 border-white shadow-xl bg-gradient-to-br from-blue-400 to-blue-600 overflow-hidden">
+            <div className="absolute top-1/4 left-1/4 w-24 h-24 rounded-full border-4 border-white shadow-xl bg-gradient-to-br from-blue-400 to-blue-600 overflow-hidden hover:scale-110 transition-transform duration-300 animate-float">
               <div className="w-full h-full flex items-center justify-center text-white text-2xl font-bold">
                 DM
               </div>
             </div>
 
-            <div className="absolute top-16 right-16 w-32 h-32 rounded-full border-4 border-white shadow-xl bg-gradient-to-br from-purple-400 to-purple-600 overflow-hidden">
+            <div className="absolute top-16 right-16 w-32 h-32 rounded-full border-4 border-white shadow-xl bg-gradient-to-br from-purple-400 to-purple-600 overflow-hidden hover:scale-110 transition-transform duration-300 animate-float" style={{animationDelay: '1s'}}>
               <div className="w-full h-full flex items-center justify-center text-white text-3xl font-bold">
                 SL
               </div>
             </div>
 
-            <div className="absolute bottom-32 left-16 w-20 h-20 rounded-full border-4 border-white shadow-xl bg-gradient-to-br from-pink-400 to-pink-600 overflow-hidden">
+            <div className="absolute bottom-32 left-16 w-20 h-20 rounded-full border-4 border-white shadow-xl bg-gradient-to-br from-pink-400 to-pink-600 overflow-hidden hover:scale-110 transition-transform duration-300 animate-float" style={{animationDelay: '2s'}}>
               <div className="w-full h-full flex items-center justify-center text-white text-xl font-bold">
                 MR
               </div>
             </div>
 
-            <div className="absolute top-1/2 right-1/4 w-28 h-28 rounded-full border-4 border-white shadow-xl bg-gradient-to-br from-green-400 to-green-600 overflow-hidden">
+            <div className="absolute top-1/2 right-1/4 w-28 h-28 rounded-full border-4 border-white shadow-xl bg-gradient-to-br from-green-400 to-green-600 overflow-hidden hover:scale-110 transition-transform duration-300 animate-float" style={{animationDelay: '1.5s'}}>
               <div className="w-full h-full flex items-center justify-center text-white text-2xl font-bold">
                 JD
               </div>

@@ -66,9 +66,9 @@ export default function ContactUs() {
 
               {/* Contact Cards */}
               <div className="space-y-6">
-                <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <FaPhone className="text-primary-500 text-xl" />
+                <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl hover:bg-primary-50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary-500 group-hover:scale-110 transition-all duration-300">
+                    <FaPhone className="text-primary-500 text-xl group-hover:text-white transition-colors duration-300" />
                   </div>
                   <div>
                     <h3 className="font-bold text-secondary-700 mb-1">Phone</h3>
@@ -78,9 +78,9 @@ export default function ContactUs() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <FaEnvelope className="text-primary-500 text-xl" />
+                <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl hover:bg-primary-50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary-500 group-hover:scale-110 transition-all duration-300">
+                    <FaEnvelope className="text-primary-500 text-xl group-hover:text-white transition-colors duration-300" />
                   </div>
                   <div>
                     <h3 className="font-bold text-secondary-700 mb-1">Email</h3>
@@ -90,9 +90,9 @@ export default function ContactUs() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <FaMapMarkerAlt className="text-primary-500 text-xl" />
+                <div className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl hover:bg-primary-50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary-500 group-hover:scale-110 transition-all duration-300">
+                    <FaMapMarkerAlt className="text-primary-500 text-xl group-hover:text-white transition-colors duration-300" />
                   </div>
                   <div>
                     <h3 className="font-bold text-secondary-700 mb-1">Location</h3>
