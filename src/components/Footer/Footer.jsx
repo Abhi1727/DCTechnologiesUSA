@@ -41,8 +41,8 @@ export default function Footer() {
       </div>
 
       {/* Main Footer */}
-      <div className="container-custom py-12 sm:py-14 md:py-16">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-10 md:mb-12">
+      <div className="container-custom py-8 sm:py-10 md:py-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Company Info */}
           <div className="px-4 sm:px-0">
             <h3 className="text-xl sm:text-2xl font-display font-bold text-white mb-3 sm:mb-4">
@@ -153,7 +153,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
-        <div className="container-custom py-5 sm:py-6">
+        <div className="container-custom py-4 sm:py-5">
           <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 px-4 sm:px-0">
             <p className="text-gray-400 text-xs sm:text-sm text-center md:text-left">
               ©Copyright {currentYear} | {siteData.company.name} | All Rights Reserved.

@@ -298,18 +298,16 @@ export const siteData = {
     about:
       'We are more than just a staffing company—we are your strategic partner in building the workforce of tomorrow.',
     quickLinks: [
-      { name: 'Home', href: '#home' },
-      { name: 'Who We Are', href: '#about' },
-      { name: 'Services', href: '#services' },
-      { name: 'Contact Us', href: '#contact' },
-      { name: 'Privacy Policy', href: '#privacy' },
-      { name: 'Terms & Conditions', href: '#terms' },
+      { name: 'Home', href: '/' },
+      { name: 'Who We Are', href: '/who-we-are' },
+      { name: 'Services', href: '/services' },
+      { name: 'Contact Us', href: '/contact-us' },
     ],
     services: [
-      { name: 'Talent Acquisition', href: '#services' },
-      { name: 'Contract Staffing', href: '#services' },
-      { name: 'Permanent Placement', href: '#services' },
-      { name: 'Workforce Optimization', href: '#services' },
+      { name: 'IT Consulting', href: '/services/it-consulting' },
+      { name: 'IT Training', href: '/services/it-training' },
+      { name: 'Contract Staffing', href: '/services/contract-staffing' },
+      { name: 'Permanent Placement', href: '/services/permanent-placement' },
     ],
     socialLinks: [
       { name: 'LinkedIn', icon: 'FaLinkedin', href: 'https://www.linkedin.com/company/dc-technologies-usa/' },
