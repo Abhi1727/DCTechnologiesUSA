@@ -79,7 +79,8 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-sm sm:text-base text-gray-400 hover:text-primary-400 transition-colors inline-flex items-center gap-2"
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    className="text-sm sm:text-base text-gray-400 hover:text-primary-400 transition-colors inline-flex items-center gap-2 cursor-pointer relative z-10"
                   >
                     <FaArrowRight className="text-xs flex-shrink-0" />
                     {link.name}
@@ -97,7 +98,8 @@ export default function Footer() {
                 <li key={service.name}>
                   <Link
                     to={service.href}
-                    className="text-sm sm:text-base text-gray-400 hover:text-primary-400 transition-colors inline-flex items-center gap-2"
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    className="text-sm sm:text-base text-gray-400 hover:text-primary-400 transition-colors inline-flex items-center gap-2 cursor-pointer relative z-10"
                   >
                     <FaArrowRight className="text-xs flex-shrink-0" />
                     {service.name}
