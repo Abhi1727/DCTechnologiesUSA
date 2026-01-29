@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { siteData } from '../../utils/constants'
 
@@ -16,6 +16,15 @@ export default function Testimonials() {
       prev === 0 ? siteData.testimonials.items.length - 1 : prev - 1
     )
   }
+
+  // Auto-scroll every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextTestimonial()
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [currentIndex])
 
   return (
     <section id="testimonials" className="section bg-white relative overflow-hidden">
