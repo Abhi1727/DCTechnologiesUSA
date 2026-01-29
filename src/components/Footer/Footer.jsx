@@ -157,12 +157,12 @@ export default function Footer() {
               ©Copyright {currentYear} | {siteData.company.name} | All Rights Reserved.
             </p>
             <div className="flex gap-4 sm:gap-6 text-xs sm:text-sm">
-              <a href="#privacy" className="text-gray-400 hover:text-primary-400 transition-colors">
+              <Link to="/privacy-policy" className="text-gray-400 hover:text-primary-400 transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#terms" className="text-gray-400 hover:text-primary-400 transition-colors">
+              </Link>
+              <Link to="/terms-conditions" className="text-gray-400 hover:text-primary-400 transition-colors">
                 Terms & Conditions
-              </a>
+              </Link>
             </div>
           </div>
         </div>

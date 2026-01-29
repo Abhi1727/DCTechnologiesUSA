@@ -35,8 +35,8 @@ export default function About() {
             {/* Main Large Image */}
             <div className="rounded-3xl overflow-hidden shadow-2xl mb-4">
               <img 
-                src="/images/Industry Expertise.jpg" 
-                alt="DC Technologies USA - Industry Expertise"
+                src="/images/hero-main.jpg" 
+                alt="DC Technologies USA - Professional Team Collaboration"
                 className="aspect-[4/3] w-full object-cover"
                 loading="lazy"
               />
@@ -100,7 +100,7 @@ export default function About() {
               {siteData.about.subtitle}
             </p>
             <p className="text-gray-400 leading-relaxed mb-8">
-              Partner with us to experience seamless hiring and unmatched results.
+              We are a premier staffing company dedicated to connecting businesses with exceptional talent. With a mission to simplify workforce challenges, we provide innovative and customized solutions across industries. Partner with us to experience seamless hiring and unmatched results.
             </p>
             <Link to="/who-we-are" className="px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors inline-flex items-center gap-3 group">
               {siteData.about.cta}

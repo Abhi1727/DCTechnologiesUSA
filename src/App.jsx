@@ -7,6 +7,8 @@ import WhoWeAre from './pages/WhoWeAre.jsx'
 import Services from './pages/Services.jsx'
 import ServiceDetail from './pages/ServiceDetail.jsx'
 import ContactUs from './pages/ContactUs.jsx'
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
+import TermsConditions from './pages/TermsConditions.jsx'
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-conditions" element={<TermsConditions />} />
           </Routes>
         </main>
         <Footer />

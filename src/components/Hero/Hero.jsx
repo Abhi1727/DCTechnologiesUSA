@@ -37,32 +37,14 @@ export default function Hero() {
           {/* Right Content - Image */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              {/* Hero Image with responsive sources */}
-              <picture>
-                <source 
-                  media="(min-width: 1024px)" 
-                  srcSet="/images/hero-main.webp" 
-                  type="image/webp"
-                />
-                <source 
-                  media="(min-width: 768px)" 
-                  srcSet="/images/hero-main-md.jpg" 
-                  type="image/jpeg"
-                />
-                <source 
-                  media="(max-width: 767px)" 
-                  srcSet="/images/hero-main-sm.jpg" 
-                  type="image/jpeg"
-                />
-                <img 
-                  src="/images/hero-main.jpg" 
-                  alt="IT Staffing and Technology Recruitment Services - Professional team collaboration"
-                  className="w-full h-auto object-cover aspect-[4/3]"
-                  loading="eager"
-                  width="1200"
-                  height="900"
-                />
-              </picture>
+              <img 
+                src="/images/Industry Expertise.jpg" 
+                alt="DC Technologies USA - Expert IT Staffing and Technology Recruitment"
+                className="w-full h-auto object-cover aspect-[4/3]"
+                loading="eager"
+                width="1200"
+                height="900"
+              />
             </div>
             
             {/* Decorative Elements */}
