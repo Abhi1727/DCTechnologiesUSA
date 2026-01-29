@@ -20,6 +20,11 @@ export default function Header() {
     return location.pathname === path
   }
 
+  const handleNavClick = () => {
+    setIsMobileMenuOpen(false)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <>
       {/* Main Navigation */}
@@ -55,6 +60,7 @@ export default function Header() {
                 <Link
                   key={link.name}
                   to={link.href}
+                  onClick={handleNavClick}
                   className={`font-medium transition-colors ${
                     isActive(link.href) 
                       ? 'text-primary-500' 
@@ -88,7 +94,7 @@ export default function Header() {
                   <Link
                     key={link.name}
                     to={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={handleNavClick}
                     className={`font-medium transition-colors py-2 ${
                       isActive(link.href)
                         ? 'text-primary-500'
