@@ -33,21 +33,11 @@ export default function About() {
           {/* Images Container */}
           <div className="relative z-10 max-w-xl">
             {/* Main Large Image */}
-            <div className="rounded-3xl overflow-hidden shadow-2xl mb-4 hover:shadow-primary-700/50 hover:scale-[1.02] transition-all duration-500 group">
+            <div className="rounded-3xl overflow-hidden shadow-2xl hover:shadow-primary-700/50 hover:scale-[1.02] transition-all duration-500 group">
               <img 
                 src="/images/hero-main.jpg" 
                 alt="DC Technologies USA - Professional Team Collaboration"
                 className="aspect-[4/3] w-full object-cover group-hover:scale-105 transition-transform duration-700"
-                loading="lazy"
-              />
-            </div>
-
-            {/* Small Image Overlay */}
-            <div className="absolute bottom-8 left-8 w-48 h-36 rounded-2xl overflow-hidden shadow-xl border-4 border-white">
-              <img 
-                src="/images/hero-main-md.jpg" 
-                alt="Professional IT Services"
-                className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>
