@@ -30,13 +30,21 @@ export default function Header() {
       >
         <nav className="container-custom">
           <div className="flex justify-between items-center py-4">
-            {/* Logo - Larger without text */}
-            <Link to="/" className="flex items-center">
+            {/* Logo with Company Name */}
+            <Link to="/" className="flex items-center gap-3">
               <img 
                 src="/logo.png" 
-                alt="DC Technologies USA" 
-                className="h-16 w-16 sm:h-20 sm:w-20 object-contain"
+                alt="DC Technologies USA Logo" 
+                className="h-12 w-12 sm:h-14 sm:w-14 object-contain"
               />
+              <div className="flex flex-col">
+                <span className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight leading-none">
+                  DC <span className="text-primary-500">TECHNOLOGIES</span>
+                </span>
+                <span className="text-xs sm:text-sm font-medium text-gray-600 tracking-wider">
+                  USA
+                </span>
+              </div>
             </Link>
 
             {/* Desktop Navigation */}
