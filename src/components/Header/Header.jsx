@@ -55,13 +55,13 @@ export default function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
+            <div className="hidden lg:flex items-center gap-8 relative z-10">
               {siteData.navigation.links.map((link) => (
                 <Link
                   key={link.name}
                   to={link.href}
                   onClick={handleNavClick}
-                  className={`font-medium transition-colors ${
+                  className={`font-medium transition-colors cursor-pointer ${
                     isActive(link.href) 
                       ? 'text-primary-500' 
                       : 'text-gray-700 hover:text-primary-500'
