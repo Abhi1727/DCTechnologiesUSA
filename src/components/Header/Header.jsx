@@ -70,6 +70,13 @@ export default function Header() {
                   {link.name}
                 </Link>
               ))}
+              <Link
+                to="/checkout"
+                onClick={handleNavClick}
+                className="px-6 py-2.5 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 hover:shadow-lg transition-all"
+              >
+                Pay Now
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -104,6 +111,13 @@ export default function Header() {
                     {link.name}
                   </Link>
                 ))}
+                <Link
+                  to="/checkout"
+                  onClick={handleNavClick}
+                  className="px-6 py-3 bg-primary-500 text-white rounded-lg font-semibold hover:bg-primary-600 transition-all text-center"
+                >
+                  Pay Now
+                </Link>
               </div>
               <div className="flex flex-col gap-3 mt-4 pt-4 border-t">
                 <a href={`tel:${siteData.company.phone}`} className="flex items-center gap-2 text-gray-600">

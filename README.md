@@ -89,12 +89,45 @@ npm run dev
 ## 📜 Available Scripts
 
 ```bash
-npm run dev      # Start dev server
-npm run build    # Build for production
-npm run preview  # Preview production build
-npm run lint     # Run ESLint
-npm run format   # Format code with Prettier
+npm run dev           # Start frontend dev server
+npm run dev:server    # Start backend server
+npm run dev:all       # Start both frontend & backend
+npm run build         # Build for production
+npm run preview       # Preview production build
+npm run server        # Run backend in production
+npm run lint          # Run ESLint
+npm run format        # Format code with Prettier
 ```
+
+## 💳 Payment System
+
+The website now includes a complete Stripe payment integration supporting:
+
+- 💳 **Credit/Debit Cards** - All major cards accepted
+- 🇸🇪 **Klarna** - Buy now, pay later (up to $10,000)
+- 🟡 **Afterpay** - Split into 4 payments (up to $4,000)
+- 💙 **Affirm** - Flexible financing ($50-$30,000)
+- ⚡ **Zip** - Pay over time (up to $1,000)
+
+### Quick Start
+
+1. **Get Stripe API keys** from [Stripe Dashboard](https://dashboard.stripe.com)
+2. **Configure environment variables**:
+   ```bash
+   # Frontend .env
+   VITE_STRIPE_PUBLISHABLE_KEY=pk_test_your_key
+   VITE_API_URL=http://localhost:3001
+   
+   # Backend server/.env
+   STRIPE_SECRET_KEY=sk_test_your_key
+   ```
+3. **Run the application**:
+   ```bash
+   npm run dev:all
+   ```
+4. **Access checkout**: http://localhost:5173/checkout
+
+📚 **Detailed setup guide**: See [PAYMENT-SETUP.md](./PAYMENT-SETUP.md)
 
 ## 🚀 Deployment
 
